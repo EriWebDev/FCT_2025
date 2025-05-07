@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comprobador de URLs</title>
+    <link rel="icon" type="image/png" href="{% static 'monitor/url.png' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'monitor/styles.css' %}">
+</head>
+<body>
+    <div class="theme-switch">
+        <label>
+            <input type="checkbox" id="light-mode" checked >
+            <img src="{% static 'monitor/light.png' %}" width="25px">
+        </label>
+        <label>
+            <input type="checkbox" id="dark-mode" >
+            <img src="{% static 'monitor/dark.png' %}" width="25px">
+        </label>
+    </div>
+    <div class="theme">
+    <nav class="windows">
+        <ul class="barra">
+            <div class="nav-left">
+                <li><button id="todos" class="activo" data-filtro="todos">Todos los enlaces</button></li>
+                <li><button id="pendientes" data-filtro="pendientes">Pendientes de revisión</button></li>
+                <li><button id="vistos" data-filtro="vistos">Vistos</button></li>
+                <li><button id="boe" data-filtro="boe">Boletines Oficiales</button></li>
+            </div>
+        </ul>
+    </nav>
+    <main class="container">
+        <h1>Comprobador de URLs</h1>
+
+        <section class="actions">
+            <form action="{% url 'check' %}" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="tab" value="{{ active_tab }}">
+                <button type="submit" id="changes"><img src="{% static 'monitor/lupa.png' %}" width="16"> Comprobar cambios</button>
+            </form>
+            <form action="{% url 'done' %}" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="tab" value="{{ active_tab }}">
+                <button type="submit" id="done">✔ Hecho</button>
+            </form>
+            <form action="{% url 'reset' %}" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="tab" value="{{ active_tab }}">
+                <button type="submit" id="reset"><strong>↻</strong> Resetear</button>
+            </form>
+            <!-- Botón para mostrar la barra de opciones de filtrado -->
+        <button id="filter-toggle">Filtrar opciones</button>
+
+        <!-- Barra de opciones visibles al clicar -->
+        <div id="filter-options" class="filter-options">
+            <button class="filter-option" id="filter-md5">Filtrar por MD5</button>
+            <button class="filter-option" id="filter-general">Filtrado General</button>
+            <button class="filter-option" id="filter-keywords">Filtrado por Palabras Claves</button>
+        </div>
+        <!-- Input oculto para subir archivo -->
+        <input type="file" id="file-input" style="display: none;">
+
+        <!-- Área para mostrar palabras clave encontradas -->
+        <div id="keyword-output" class="keyword-output"></div>            
+        </section>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>URLs</th>
+                        <th>Última comprobación</th>
+                        <th>¿Cambios?</th>
+                        <th>¿Revisado?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for url in urls %}
+                    <tr class="fila-url {% if active_tab == 'boe' %}boe{% else %}todos{% endif %}{% if url.has_changed and not url.is_checked %} cambio{% endif %}">
+                        <td class="url-cell">
+                            <a href="{{ url.url }}" target="_blank" rel="noopener noreferrer" title="{{ url.url }}">
+                                {{ url.url }}
+                            </a>
+                        </td>
+                        <td>{{ url.last_checked|date:"Y-m-d H:i" }}</td>
+                        <td>{% if url.has_changed %}⚠️{% endif %} {{ url.has_changed }}</td>
+                        <td>
+                            <input type="checkbox" class="check" name="checked_urls" value="{{ url.id }}"
+                            {% if url.is_checked %}checked{% endif %}>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </main>
+    </div>
+    <script src="{% static 'monitor/script.js' %}"></script>
+    <footer></footer>
+</body>
+</html>
