@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Filtros Genéricos</title>
+    <link rel="icon" type="image/png" href="{% static 'monitor/url.png' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'monitor/styles.css' %}">
+    <script>
+        (function () {
+            if (localStorage.getItem("theme") === "dark") {
+                document.documentElement.classList.add("dark-mode");
+            }
+        })();
+    </script>
+</head>
+<body>
+    <div class="theme">
+        <header class="windows">
+            <ul class="barra">
+                <div class="nav-left">
+                    <li><button id="todos" class="activo" data-filtro="todos">
+                        Todos los enlaces ({{ total_counts.todos }})</button></li>
+                    <li><button id="pendientes" data-filtro="pendientes">
+                        Pendientes de revisión ({{ total_counts.pendientes }})</button></li>
+                    <li><button id="vistos" data-filtro="vistos">
+                        Vistos ({{ total_counts.vistos }})</button></li>
+                    <li><button id="boe" data-filtro="boe">
+                        Boletines Oficiales ({{ total_counts.boe }})</button></li>
+                    <li><button id="fallidas" data-filtro="fallidas">
+                        URLs Fallidas ({{ total_counts.fallidas }})</button></li>
+                    <li><button id="filters" data-filtro="filters">
+                        Filtros Genéricos</button></li>
+                    </div>
+                <div class="nav-right">
+                    <button id="toggle-theme" title="Cambiar tema"
+                    data-light-icon="{% static 'monitor/light.png' %}"
+                    data-dark-icon="{% static 'monitor/dark.png' %}">
+                    <img id="theme-icon" src="{% static 'monitor/dark.png' %}" width="25px" alt="Tema">
+                    </button>
+                </div>
+            </ul>
+        </header>
+        <div class="lateral">
+            <button id="toggle-lateral" onclick="toggleSidebar()" width="24">☰</button>
+            <aside id="sidebar">
+                <nav>
+                    <ul id="barralateral">
+                        <li><div><button id="urlbutton" class="butlat">URLs</button></div></li>
+                        <li><div><button id="boletinbutton" class="butlat">Boletines</button></div></li>
+                    </ul>
+                </nav>
+        </aside>
+        </div>
+    <main class="container">
+        <h1>Filtros Genéricos</h1>
+        <section class="botones_filtros">
+            <form method="get" action="{% url 'index' %}">
+                {% for filtro in filtros %}
+                    <label>
+                        <input type="checkbox" name="filtro_aplicado" value="{{ filtro.id }}" {% if filtro.id == filtro_aplicado_id %}checked{% endif %}>
+                        {{ filtro.nombre }}
+                    </label><br>
+                {% endfor %}
+                <button type="submit">Aplicar Filtro</button>
+            </form>
+        </section>   
+        <div class="card_filtros">
+            <!-- Botones importar y exportar -->
+            <div class="otros_botones">
+                <form action="{% url 'importar_archivo' %}" method="post" enctype="multipart/form-data" style="display:inline-flex; align-items:center; gap:10px;">
+                    {% csrf_token %}
+                    <input type="file" name="archivo" class="check" required />
+                    <button type="submit">Importar Archivo</button>
+                </form>
+                <form action="{% url 'exportar_archivo' %}" method="get" style="display:inline-flex; align-items:center; margin-left: 10px;">
+                    <button type="submit">Exportar Datos</button>
+                </form>
+                <form action="{% url 'reset_importacion' %}" method="post" style="display:inline-flex; align-items:center; margin-left: 10px;">
+                    {% csrf_token %}
+                    <button type="submit" style="background-color:#f44336; color:white; border:none; padding:8px 15px; border-radius:5px; cursor:pointer;">
+                    Eliminar Importación</button>
+                </form>
+            </div>
+            
+            <!--Ver como organizar-->
+            <form method="post" action="{% url 'crear_filtro' %}" style="margin-top: 20px;">
+                {% csrf_token %}
+                <label for="nuevo_filtro">Nombre del filtro:</label><br>
+                <input type="text" name="nombre" id="nuevo_filtro" required placeholder="Nombre del filtro"><br><br>
+                <label for="contenido_filtro" style="margin-top:10px;">Contenido del filtro:</label><br>
+                <textarea name="palabras" id="contenido_filtro" rows="4" placeholder="Escribe el contenido del filtro aquí..." required></textarea>
+                <button type="submit">Guardar</button>
+            </form>
+            
+            <div>
+                <p>
+                    Lorem Ipsum
+                </p>
+                <p>
+                    AAAAAA
+                </p>
+            </div>
+        </div>
+    </main>
+    </div>
+    <script src="{% static 'monitor/script.js' %}" defer></script>
+    <footer></footer>
+</body>
+</html>

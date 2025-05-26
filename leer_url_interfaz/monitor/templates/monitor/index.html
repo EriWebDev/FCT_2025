@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comprobador de URLs</title>
+    <link rel="icon" type="image/png" href="{% static 'monitor/url.png' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'monitor/styles.css' %}">
+    <script>
+        (function () {
+            if (localStorage.getItem("theme") === "dark") {
+                document.documentElement.classList.add("dark-mode");
+            }
+        })();
+    </script>
+</head>
+<body>
+    <div class="theme">
+        <header class="windows">
+            <ul class="barra">
+                <div class="nav-left">
+                    <li><button id="todos" class="activo" data-filtro="todos">
+                        Todos los enlaces ({{ total_counts.todos }})</button></li>
+                    <li><button id="pendientes" data-filtro="pendientes">
+                        Pendientes de revisión ({{ total_counts.pendientes }})</button></li>
+                    <li><button id="vistos" data-filtro="vistos">
+                        Vistos ({{ total_counts.vistos }})</button></li>
+                    <li><button id="boe" data-filtro="boe">
+                        Boletines Oficiales ({{ total_counts.boe }})</button></li>
+                    <li><button id="fallidas" data-filtro="fallidas">
+                        URLs Fallidas ({{ total_counts.fallidas }})</button></li>
+                    <li><button id="filtros-genericos" type="button"><a href="{% url 'filtros_genericos' %}">Filtros Genéricos</a></button></li>
+                    <!-- <li><button id="filtros-genericos" type="button" onclick="location.href='{% url 'filtros_genericos' %}'">Filtros Genéricos</button></li> -->
+                    </div>
+                <div class="nav-right">
+                    <button id="toggle-theme" title="Cambiar tema"
+                    data-light-icon="{% static 'monitor/light.png' %}"
+                    data-dark-icon="{% static 'monitor/dark.png' %}">
+                    <img id="theme-icon" src="{% static 'monitor/dark.png' %}" width="25px" alt="Tema">
+                    </button>
+                </div>
+            </ul>
+        </header>
+        <!--Barra Lateral 20/05/2025-->
+            <button id="toggle-lateral" onclick="toggleSidebar()" width="24">☰</button>
+            <aside id="sidebar">
+                <nav>
+                    <ul id="barralateral">
+                        <li><button id="urlbutton" class="butlat">URLs</li>
+                        <li><button id="boletinbutton" class="butlat">Boletines</li>
+                    </ul>
+                </nav>
+        </aside>
+        <!--Barra Lateral 20/05/2025-->
+    <main class="container">
+        <h1>Comprobador de URLs</h1>
+        <section class="actions">
+            <form action="{% url 'check' %}" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="tab" value="{{ active_tab }}">
+                <button type="submit" id="changes">
+                    <img src="{% static 'monitor/lupa.png' %}" width="16"> Comprobar cambios ({{ total_counts.pendientes }})
+                </button>
+            </form>
+            <form action="{% url 'done' %}" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="tab" value="{{ active_tab }}">
+                <button type="submit" id="done">✔ Hecho ({{ total_counts.vistos }})</button>
+            </form>
+            <form action="{% url 'reset' %}" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="tab" value="{{ active_tab }}">
+                <button type="submit" id="reset"><strong>↻</strong> Resetear ({{ total_counts.todos }})</button>
+            </form>
+            <!--Botón FILTROS-->
+            <div class="filter-container">
+            <button id="filter-toggle">☰ Filtros</button>
+            <!-- Barra de opciones visibles al clicar -->
+            <div id="filter-options" class="filter-options">
+                <label><input type="checkbox" class="filter-option" id="filter-md5">Filtrar por MD5</label>
+                <label><input type="checkbox" class="filter-option" id="filter-general">Filtro General</label>
+                <label><input type="checkbox" class="filter-option" id="filter-keywords">Filtro Palabras Claves</label>
+            </div>
+            </div>
+            <!-- Input oculto para subir archivo -->
+            <input type="file" id="file-input" style="display: none;">
+            <!-- Área para mostrar palabras clave encontradas -->
+            <div id="keyword-output" class="keyword-output"></div>           
+        </section>
+        <div class="card">
+            <!-- Paginador-->
+            <div class="pagination">
+                {% if page_obj.has_previous %}
+                    <a href="?tab={{ active_tab }}&page={{ page_obj.previous_page_number }}" class="page-link">← Previa</a>
+                {% endif %}
+
+                <span class="page-info">Página {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}</span>
+
+                {% if page_obj.has_next %}
+                    <a href="?tab={{ active_tab }}&page={{ page_obj.next_page_number }}" class="page-link">Siguiente →</a>
+                {% endif %}
+            </div>
+            <!--BUSCADOR! 20/05/2025-->
+            <div class="searcher">
+                <!-- <form action="" method="get"> -->
+                    <input type="text" id="urlInput" placeholder="Buscar URL...">
+                    <button onclick="buscarURL()" id="search"><img src="{% static 'monitor/lupa.png' %}" width="16"></button>
+                <!-- </form> -->
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>URLs</th>
+                        <th>Última comprobación</th>
+                        <th>¿Cambios?</th>
+                        <th>¿Revisado?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for url in page_obj %}
+                    <tr class="fila-url {% if active_tab == 'boe' %}boe{% else %}todos{% endif %}{% if url.has_changed and not url.is_checked %} cambio{% endif %}">
+                        <td class="url-cell">
+                            <a href="{{ url.url }}" target="_blank" rel="noopener noreferrer" title="{{ url.url }}">
+                                {{ url.url }}
+                            </a>
+                        </td>
+                        <td>{{ url.last_checked|date:"Y-m-d H:i" }}</td>
+                        <td>{% if url.has_changed %}⚠️{% endif %} {{ url.has_changed }}</td>
+                        <td>
+                            <input type="checkbox" class="check" name="checked_urls" value="{{ url.id }}"
+                            {% if url.is_checked %}checked{% endif %}>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <!--​ Paginador-->
+            <div class="pagination">
+                {% if page_obj.has_previous %}
+                <a href="?tab={{ active_tab }}&page={{ page_obj.previous_page_number }}" class="page-link">← Previa</a>
+                {% endif %}
+
+                <span class="page-info">Página {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}</span>
+
+                {% if page_obj.has_next %}
+                <a href="?tab={{ active_tab }}&page={{ page_obj.next_page_number }}" class="page-link">Siguiente →</a>
+                {% endif %}
+            </div>
+        </div>
+    </main>
+    </div>
+    <script src="{% static 'monitor/script.js' %}" defer></script>
+    <footer></footer>
+</body>
+</html>
