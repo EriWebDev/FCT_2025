@@ -1,0 +1,5 @@
+<h1>Error en la importación</h1>
+{% if error %}
+    <p style="color: #FF0000;">{{ error }}</p>
+{% endif %}
+<a href="{% url 'filtros_genericos' %}">Volver</a>

@@ -1,0 +1,661 @@
+('C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+ '5.3\\leer_url_interfaz\\dist\\start_app.exe',
+ True,
+ False,
+ False,
+ 'C:\\Python\\Lib\\site-packages\\PyInstaller\\bootloader\\images\\icon-console.ico',
+ None,
+ False,
+ False,
+ b'<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n<assembly xmlns='
+ b'"urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\n  <trustInfo x'
+ b'mlns="urn:schemas-microsoft-com:asm.v3">\n    <security>\n      <requested'
+ b'Privileges>\n        <requestedExecutionLevel level="asInvoker" uiAccess='
+ b'"false"/>\n      </requestedPrivileges>\n    </security>\n  </trustInfo>\n  '
+ b'<compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">\n    <'
+ b'application>\n      <supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f'
+ b'0}"/>\n      <supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>\n '
+ b'     <supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"/>\n      <s'
+ b'upportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>\n      <supporte'
+ b'dOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}"/>\n    </application>\n  <'
+ b'/compatibility>\n  <application xmlns="urn:schemas-microsoft-com:asm.v3">'
+ b'\n    <windowsSettings>\n      <longPathAware xmlns="http://schemas.micros'
+ b'oft.com/SMI/2016/WindowsSettings">true</longPathAware>\n    </windowsSett'
+ b'ings>\n  </application>\n  <dependency>\n    <dependentAssembly>\n      <ass'
+ b'emblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version='
+ b'"6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" langua'
+ b'ge="*"/>\n    </dependentAssembly>\n  </dependency>\n</assembly>',
+ True,
+ False,
+ None,
+ None,
+ None,
+ 'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+ '5.3\\leer_url_interfaz\\build\\start_app\\start_app.pkg',
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\build\\start_app\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\build\\start_app\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\build\\start_app\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\build\\start_app\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\build\\start_app\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\build\\start_app\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\Python\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Python\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('start_app',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\start_app.py',
+   'PYSOURCE'),
+  ('python313.dll', 'C:\\Python\\python313.dll', 'BINARY'),
+  ('unicodedata.pyd', 'C:\\Python\\DLLs\\unicodedata.pyd', 'EXTENSION'),
+  ('_decimal.pyd', 'C:\\Python\\DLLs\\_decimal.pyd', 'EXTENSION'),
+  ('_hashlib.pyd', 'C:\\Python\\DLLs\\_hashlib.pyd', 'EXTENSION'),
+  ('select.pyd', 'C:\\Python\\DLLs\\select.pyd', 'EXTENSION'),
+  ('_socket.pyd', 'C:\\Python\\DLLs\\_socket.pyd', 'EXTENSION'),
+  ('_lzma.pyd', 'C:\\Python\\DLLs\\_lzma.pyd', 'EXTENSION'),
+  ('_bz2.pyd', 'C:\\Python\\DLLs\\_bz2.pyd', 'EXTENSION'),
+  ('_ctypes.pyd', 'C:\\Python\\DLLs\\_ctypes.pyd', 'EXTENSION'),
+  ('VCRUNTIME140.dll', 'C:\\Python\\VCRUNTIME140.dll', 'BINARY'),
+  ('libcrypto-3.dll', 'C:\\Python\\DLLs\\libcrypto-3.dll', 'BINARY'),
+  ('libffi-8.dll', 'C:\\Python\\DLLs\\libffi-8.dll', 'BINARY'),
+  ('ServiciosSgtoConv2025.xlsx',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\ServiciosSgtoConv2025.xlsx',
+   'DATA'),
+  ('db.sqlite3',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\db.sqlite3',
+   'DATA'),
+  ('generar_preload.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\generar_preload.py',
+   'DATA'),
+  ('manage.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\manage.py',
+   'DATA'),
+  ('monitor\\__init__.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__init__.py',
+   'DATA'),
+  ('monitor\\__pycache__\\__init__.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\__init__.cpython-312.pyc',
+   'DATA'),
+  ('monitor\\__pycache__\\__init__.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\__init__.cpython-313.pyc',
+   'DATA'),
+  ('monitor\\__pycache__\\models.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\models.cpython-312.pyc',
+   'DATA'),
+  ('monitor\\__pycache__\\models.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\models.cpython-313.pyc',
+   'DATA'),
+  ('monitor\\__pycache__\\urls.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\urls.cpython-312.pyc',
+   'DATA'),
+  ('monitor\\__pycache__\\urls.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\urls.cpython-313.pyc',
+   'DATA'),
+  ('monitor\\__pycache__\\views.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\views.cpython-312.pyc',
+   'DATA'),
+  ('monitor\\__pycache__\\views.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\views.cpython-313.pyc',
+   'DATA'),
+  ('monitor\\management\\__init__.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\__init__.py',
+   'DATA'),
+  ('monitor\\management\\__pycache__\\__init__.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\__pycache__\\__init__.cpython-312.pyc',
+   'DATA'),
+  ('monitor\\management\\__pycache__\\__init__.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\__pycache__\\__init__.cpython-313.pyc',
+   'DATA'),
+  ('monitor\\management\\commands\\__init__.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\commands\\__init__.py',
+   'DATA'),
+  ('monitor\\management\\commands\\__pycache__\\__init__.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\commands\\__pycache__\\__init__.cpython-312.pyc',
+   'DATA'),
+  ('monitor\\management\\commands\\__pycache__\\__init__.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\commands\\__pycache__\\__init__.cpython-313.pyc',
+   'DATA'),
+  ('monitor\\management\\commands\\__pycache__\\preload_urls.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\commands\\__pycache__\\preload_urls.cpython-312.pyc',
+   'DATA'),
+  ('monitor\\management\\commands\\__pycache__\\preload_urls.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\commands\\__pycache__\\preload_urls.cpython-313.pyc',
+   'DATA'),
+  ('monitor\\management\\commands\\preload_urls.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\commands\\preload_urls.py',
+   'DATA'),
+  ('monitor\\migrations\\0001_initial.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\0001_initial.py',
+   'DATA'),
+  ('monitor\\migrations\\0002_urlmonitor_is_failed_urlmonitor_status_code.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\0002_urlmonitor_is_failed_urlmonitor_status_code.py',
+   'DATA'),
+  ('monitor\\migrations\\__init__.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__init__.py',
+   'DATA'),
+  ('monitor\\migrations\\__pycache__\\0001_initial.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0001_initial.cpython-312.pyc',
+   'DATA'),
+  ('monitor\\migrations\\__pycache__\\0001_initial.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0001_initial.cpython-313.pyc',
+   'DATA'),
+  ('monitor\\migrations\\__pycache__\\0002_auto_20250423_2204.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0002_auto_20250423_2204.cpython-312.pyc',
+   'DATA'),
+  ('monitor\\migrations\\__pycache__\\0002_auto_20250423_2204.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0002_auto_20250423_2204.cpython-313.pyc',
+   'DATA'),
+  ('monitor\\migrations\\__pycache__\\0002_urlmonitor_is_failed_urlmonitor_status_code.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0002_urlmonitor_is_failed_urlmonitor_status_code.cpython-313.pyc',
+   'DATA'),
+  ('monitor\\migrations\\__pycache__\\0003_boletinurl.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0003_boletinurl.cpython-312.pyc',
+   'DATA'),
+  ('monitor\\migrations\\__pycache__\\0003_boletinurl.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0003_boletinurl.cpython-313.pyc',
+   'DATA'),
+  ('monitor\\migrations\\__pycache__\\0004_alter_boletinurl_hash_alter_urlmonitor_hash.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0004_alter_boletinurl_hash_alter_urlmonitor_hash.cpython-312.pyc',
+   'DATA'),
+  ('monitor\\migrations\\__pycache__\\__init__.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\__init__.cpython-312.pyc',
+   'DATA'),
+  ('monitor\\migrations\\__pycache__\\__init__.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\__init__.cpython-313.pyc',
+   'DATA'),
+  ('monitor\\models.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\models.py',
+   'DATA'),
+  ('monitor\\static\\monitor\\dark.png',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\static\\monitor\\dark.png',
+   'DATA'),
+  ('monitor\\static\\monitor\\light.png',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\static\\monitor\\light.png',
+   'DATA'),
+  ('monitor\\static\\monitor\\lupa.png',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\static\\monitor\\lupa.png',
+   'DATA'),
+  ('monitor\\static\\monitor\\script.js',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\static\\monitor\\script.js',
+   'DATA'),
+  ('monitor\\static\\monitor\\styles.css',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\static\\monitor\\styles.css',
+   'DATA'),
+  ('monitor\\static\\monitor\\url.png',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\static\\monitor\\url.png',
+   'DATA'),
+  ('monitor\\templates\\monitor\\index.html',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\templates\\monitor\\index.html',
+   'DATA'),
+  ('monitor\\urls.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\urls.py',
+   'DATA'),
+  ('monitor\\utils.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\utils.py',
+   'DATA'),
+  ('monitor\\views.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\views.py',
+   'DATA'),
+  ('static\\__init__.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__init__.py',
+   'DATA'),
+  ('static\\__pycache__\\__init__.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\__init__.cpython-312.pyc',
+   'DATA'),
+  ('static\\__pycache__\\__init__.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\__init__.cpython-313.pyc',
+   'DATA'),
+  ('static\\__pycache__\\models.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\models.cpython-312.pyc',
+   'DATA'),
+  ('static\\__pycache__\\models.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\models.cpython-313.pyc',
+   'DATA'),
+  ('static\\__pycache__\\urls.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\urls.cpython-312.pyc',
+   'DATA'),
+  ('static\\__pycache__\\urls.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\urls.cpython-313.pyc',
+   'DATA'),
+  ('static\\__pycache__\\views.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\views.cpython-312.pyc',
+   'DATA'),
+  ('static\\__pycache__\\views.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\views.cpython-313.pyc',
+   'DATA'),
+  ('static\\management\\__init__.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\__init__.py',
+   'DATA'),
+  ('static\\management\\__pycache__\\__init__.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\__pycache__\\__init__.cpython-312.pyc',
+   'DATA'),
+  ('static\\management\\__pycache__\\__init__.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\__pycache__\\__init__.cpython-313.pyc',
+   'DATA'),
+  ('static\\management\\commands\\__init__.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\commands\\__init__.py',
+   'DATA'),
+  ('static\\management\\commands\\__pycache__\\__init__.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\commands\\__pycache__\\__init__.cpython-312.pyc',
+   'DATA'),
+  ('static\\management\\commands\\__pycache__\\__init__.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\commands\\__pycache__\\__init__.cpython-313.pyc',
+   'DATA'),
+  ('static\\management\\commands\\__pycache__\\preload_urls.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\commands\\__pycache__\\preload_urls.cpython-312.pyc',
+   'DATA'),
+  ('static\\management\\commands\\__pycache__\\preload_urls.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\commands\\__pycache__\\preload_urls.cpython-313.pyc',
+   'DATA'),
+  ('static\\management\\commands\\preload_urls.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\commands\\preload_urls.py',
+   'DATA'),
+  ('static\\migrations\\0001_initial.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\0001_initial.py',
+   'DATA'),
+  ('static\\migrations\\0002_urlmonitor_is_failed_urlmonitor_status_code.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\0002_urlmonitor_is_failed_urlmonitor_status_code.py',
+   'DATA'),
+  ('static\\migrations\\__init__.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__init__.py',
+   'DATA'),
+  ('static\\migrations\\__pycache__\\0001_initial.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0001_initial.cpython-312.pyc',
+   'DATA'),
+  ('static\\migrations\\__pycache__\\0001_initial.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0001_initial.cpython-313.pyc',
+   'DATA'),
+  ('static\\migrations\\__pycache__\\0002_auto_20250423_2204.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0002_auto_20250423_2204.cpython-312.pyc',
+   'DATA'),
+  ('static\\migrations\\__pycache__\\0002_auto_20250423_2204.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0002_auto_20250423_2204.cpython-313.pyc',
+   'DATA'),
+  ('static\\migrations\\__pycache__\\0002_urlmonitor_is_failed_urlmonitor_status_code.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0002_urlmonitor_is_failed_urlmonitor_status_code.cpython-313.pyc',
+   'DATA'),
+  ('static\\migrations\\__pycache__\\0003_boletinurl.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0003_boletinurl.cpython-312.pyc',
+   'DATA'),
+  ('static\\migrations\\__pycache__\\0003_boletinurl.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0003_boletinurl.cpython-313.pyc',
+   'DATA'),
+  ('static\\migrations\\__pycache__\\0004_alter_boletinurl_hash_alter_urlmonitor_hash.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0004_alter_boletinurl_hash_alter_urlmonitor_hash.cpython-312.pyc',
+   'DATA'),
+  ('static\\migrations\\__pycache__\\__init__.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\__init__.cpython-312.pyc',
+   'DATA'),
+  ('static\\migrations\\__pycache__\\__init__.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\__init__.cpython-313.pyc',
+   'DATA'),
+  ('static\\models.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\models.py',
+   'DATA'),
+  ('static\\static\\monitor\\dark.png',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\static\\monitor\\dark.png',
+   'DATA'),
+  ('static\\static\\monitor\\light.png',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\static\\monitor\\light.png',
+   'DATA'),
+  ('static\\static\\monitor\\lupa.png',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\static\\monitor\\lupa.png',
+   'DATA'),
+  ('static\\static\\monitor\\script.js',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\static\\monitor\\script.js',
+   'DATA'),
+  ('static\\static\\monitor\\styles.css',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\static\\monitor\\styles.css',
+   'DATA'),
+  ('static\\static\\monitor\\url.png',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\static\\monitor\\url.png',
+   'DATA'),
+  ('static\\templates\\monitor\\index.html',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\templates\\monitor\\index.html',
+   'DATA'),
+  ('static\\urls.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\urls.py',
+   'DATA'),
+  ('static\\utils.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\utils.py',
+   'DATA'),
+  ('static\\views.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\views.py',
+   'DATA'),
+  ('templates\\__init__.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__init__.py',
+   'DATA'),
+  ('templates\\__pycache__\\__init__.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\__init__.cpython-312.pyc',
+   'DATA'),
+  ('templates\\__pycache__\\__init__.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\__init__.cpython-313.pyc',
+   'DATA'),
+  ('templates\\__pycache__\\models.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\models.cpython-312.pyc',
+   'DATA'),
+  ('templates\\__pycache__\\models.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\models.cpython-313.pyc',
+   'DATA'),
+  ('templates\\__pycache__\\urls.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\urls.cpython-312.pyc',
+   'DATA'),
+  ('templates\\__pycache__\\urls.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\urls.cpython-313.pyc',
+   'DATA'),
+  ('templates\\__pycache__\\views.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\views.cpython-312.pyc',
+   'DATA'),
+  ('templates\\__pycache__\\views.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\__pycache__\\views.cpython-313.pyc',
+   'DATA'),
+  ('templates\\management\\__init__.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\__init__.py',
+   'DATA'),
+  ('templates\\management\\__pycache__\\__init__.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\__pycache__\\__init__.cpython-312.pyc',
+   'DATA'),
+  ('templates\\management\\__pycache__\\__init__.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\__pycache__\\__init__.cpython-313.pyc',
+   'DATA'),
+  ('templates\\management\\commands\\__init__.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\commands\\__init__.py',
+   'DATA'),
+  ('templates\\management\\commands\\__pycache__\\__init__.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\commands\\__pycache__\\__init__.cpython-312.pyc',
+   'DATA'),
+  ('templates\\management\\commands\\__pycache__\\__init__.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\commands\\__pycache__\\__init__.cpython-313.pyc',
+   'DATA'),
+  ('templates\\management\\commands\\__pycache__\\preload_urls.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\commands\\__pycache__\\preload_urls.cpython-312.pyc',
+   'DATA'),
+  ('templates\\management\\commands\\__pycache__\\preload_urls.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\commands\\__pycache__\\preload_urls.cpython-313.pyc',
+   'DATA'),
+  ('templates\\management\\commands\\preload_urls.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\management\\commands\\preload_urls.py',
+   'DATA'),
+  ('templates\\migrations\\0001_initial.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\0001_initial.py',
+   'DATA'),
+  ('templates\\migrations\\0002_urlmonitor_is_failed_urlmonitor_status_code.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\0002_urlmonitor_is_failed_urlmonitor_status_code.py',
+   'DATA'),
+  ('templates\\migrations\\__init__.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__init__.py',
+   'DATA'),
+  ('templates\\migrations\\__pycache__\\0001_initial.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0001_initial.cpython-312.pyc',
+   'DATA'),
+  ('templates\\migrations\\__pycache__\\0001_initial.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0001_initial.cpython-313.pyc',
+   'DATA'),
+  ('templates\\migrations\\__pycache__\\0002_auto_20250423_2204.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0002_auto_20250423_2204.cpython-312.pyc',
+   'DATA'),
+  ('templates\\migrations\\__pycache__\\0002_auto_20250423_2204.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0002_auto_20250423_2204.cpython-313.pyc',
+   'DATA'),
+  ('templates\\migrations\\__pycache__\\0002_urlmonitor_is_failed_urlmonitor_status_code.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0002_urlmonitor_is_failed_urlmonitor_status_code.cpython-313.pyc',
+   'DATA'),
+  ('templates\\migrations\\__pycache__\\0003_boletinurl.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0003_boletinurl.cpython-312.pyc',
+   'DATA'),
+  ('templates\\migrations\\__pycache__\\0003_boletinurl.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0003_boletinurl.cpython-313.pyc',
+   'DATA'),
+  ('templates\\migrations\\__pycache__\\0004_alter_boletinurl_hash_alter_urlmonitor_hash.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\0004_alter_boletinurl_hash_alter_urlmonitor_hash.cpython-312.pyc',
+   'DATA'),
+  ('templates\\migrations\\__pycache__\\__init__.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\__init__.cpython-312.pyc',
+   'DATA'),
+  ('templates\\migrations\\__pycache__\\__init__.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\migrations\\__pycache__\\__init__.cpython-313.pyc',
+   'DATA'),
+  ('templates\\models.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\models.py',
+   'DATA'),
+  ('templates\\static\\monitor\\dark.png',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\static\\monitor\\dark.png',
+   'DATA'),
+  ('templates\\static\\monitor\\light.png',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\static\\monitor\\light.png',
+   'DATA'),
+  ('templates\\static\\monitor\\lupa.png',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\static\\monitor\\lupa.png',
+   'DATA'),
+  ('templates\\static\\monitor\\script.js',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\static\\monitor\\script.js',
+   'DATA'),
+  ('templates\\static\\monitor\\styles.css',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\static\\monitor\\styles.css',
+   'DATA'),
+  ('templates\\static\\monitor\\url.png',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\static\\monitor\\url.png',
+   'DATA'),
+  ('templates\\templates\\monitor\\index.html',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\templates\\monitor\\index.html',
+   'DATA'),
+  ('templates\\urls.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\urls.py',
+   'DATA'),
+  ('templates\\utils.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\utils.py',
+   'DATA'),
+  ('templates\\views.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\monitor\\views.py',
+   'DATA'),
+  ('url_monitor\\__init__.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\url_monitor\\__init__.py',
+   'DATA'),
+  ('url_monitor\\__pycache__\\__init__.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\url_monitor\\__pycache__\\__init__.cpython-312.pyc',
+   'DATA'),
+  ('url_monitor\\__pycache__\\__init__.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\url_monitor\\__pycache__\\__init__.cpython-313.pyc',
+   'DATA'),
+  ('url_monitor\\__pycache__\\settings.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\url_monitor\\__pycache__\\settings.cpython-312.pyc',
+   'DATA'),
+  ('url_monitor\\__pycache__\\settings.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\url_monitor\\__pycache__\\settings.cpython-313.pyc',
+   'DATA'),
+  ('url_monitor\\__pycache__\\urls.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\url_monitor\\__pycache__\\urls.cpython-312.pyc',
+   'DATA'),
+  ('url_monitor\\__pycache__\\urls.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\url_monitor\\__pycache__\\urls.cpython-313.pyc',
+   'DATA'),
+  ('url_monitor\\__pycache__\\wsgi.cpython-312.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\url_monitor\\__pycache__\\wsgi.cpython-312.pyc',
+   'DATA'),
+  ('url_monitor\\__pycache__\\wsgi.cpython-313.pyc',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\url_monitor\\__pycache__\\wsgi.cpython-313.pyc',
+   'DATA'),
+  ('url_monitor\\settings.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\url_monitor\\settings.py',
+   'DATA'),
+  ('url_monitor\\urls.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\url_monitor\\urls.py',
+   'DATA'),
+  ('url_monitor\\wsgi.py',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\url_monitor\\wsgi.py',
+   'DATA'),
+  ('base_library.zip',
+   'C:\\Users\\Ferdi\\Desktop\\DJango 5.3\\DJango '
+   '5.3\\leer_url_interfaz\\build\\start_app\\base_library.zip',
+   'DATA')],
+ [],
+ False,
+ False,
+ 1746774885,
+ [('run.exe',
+   'C:\\Python\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\run.exe',
+   'EXECUTABLE')],
+ 'C:\\Python\\python313.dll')
